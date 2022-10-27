@@ -3,6 +3,7 @@
 let red = document.getElementById('red')
 let yellow = document.getElementById('yellow')
 let green = document.getElementById('green')
+let funnyArrayTotallyExcessiveForAAlreadyWorkingScript = ['red', 'yellow','green']
 const timeout = (traffic(), 5000);
 
 /* function traffic() {
@@ -31,9 +32,9 @@ function buttonface() {
 }*/
 
 function traffic() {
-    setTimeout(background, 5000, 'red', '', '');
-    setTimeout(background, 10000, '', 'yellow', '');
-    setTimeout(background, 15000, '', '', 'green');
+    setTimeout(background, 5000, `${funnyArrayTotallyExcessiveForAAlreadyWorkingScript[0]}`, '', '');
+    setTimeout(background, 10000, '', `${funnyArrayTotallyExcessiveForAAlreadyWorkingScript[1]}`, '');
+    setTimeout(background, 15000, '', '', `${funnyArrayTotallyExcessiveForAAlreadyWorkingScript[2]}`);
     setTimeout(background, 20000, '', '', '');
     setTimeout(traffic, 21000)
 
