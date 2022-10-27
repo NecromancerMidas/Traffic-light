@@ -35,6 +35,7 @@ function traffic() {
     setTimeout(background, 10000, '', 'yellow', '');
     setTimeout(background, 15000, '', '', 'green');
     setTimeout(background, 20000, '', '', '');
+    setTimeout(traffic, 21000)
 
     console.log(traffic);
 }
